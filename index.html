@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turistic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Turistic</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+            <a href="Menu.html" class="action_btn">Iniciar</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="Menu.html" class="action_btn">Iniciar</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="principal">
+            <h1>Bem-vindo ao Turistic</h1>
+            <p>Seu Site de informações turísticas sobre o <div id="brasil">Brasil</div></p>
+            <a href="Menu.html" class="action_btnprinc">Iniciar</a>
+        </section>
+    </main>
+
+    <div id="background">
+        <video loop autoplay muted>
+            <source src="Videos/pg princ.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const IsOpen= dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = IsOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

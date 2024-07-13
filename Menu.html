@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turistic</title>
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Turistic</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="Menu.html" class="action_btn">Iniciar</a></li>
+        </div>
+    </header>
+    <main>
+        <div id="sãopaulo" class="background">
+            <div class="title">
+                <h1>São Paulo</h1>
+                <p>São Paulo é uma metrópole cheia de vida e cultura. A Avenida Paulista é um dos locais mais icônicos, conhecida por seus arranha-céus, lojas, restaurantes e museus como o MASP (Museu de Arte de São Paulo), que é famoso por sua coleção de arte europeia e brasileira. O Parque Ibirapuera, um dos maiores parques urbanos da cidade, oferece uma ampla área verde para atividades ao ar livre, além de abrigar o Auditório Ibirapuera e o Museu de Arte Moderna.</p>
+                <a href="#" class="action_btntitle">Comprar passagem</a>
+            </div>
+        </div>
+        <div id="bahia" class="background">
+            <div class="title">
+                <h1>Bahia</h1>
+                <p>A Bahia é um estado vibrante e culturalmente rico, conhecido por suas belas praias, música, culinária e história. A capital, Salvador, é famosa por seu centro histórico, o Pelourinho, com ruas de paralelepípedos, casas coloridas e igrejas barrocas. Entre os destaques estão a Igreja de São Francisco, conhecida por sua rica decoração em ouro, e o Elevador Lacerda, que conecta a Cidade Alta à Cidade Baixa, oferecendo uma vista deslumbrante da Baía de Todos-os-Santos.</p>
+                <a href="#" class="action_btntitle">Comprar passagem</a>
+            </div>
+        </div>
+        <div id="riodejaneiro" class="background">
+            <div class="title">
+                <h1>Rio De Janeiro</h1>
+                <p>O Rio de Janeiro é um dos estados mais icônicos e visitados do Brasil, conhecido por suas paisagens deslumbrantes, praias famosas, vida cultural vibrante e seu carnaval mundialmente famoso. A cidade do Rio de Janeiro, a capital do estado, é muitas vezes referida como a "Cidade Maravilhosa" devido à sua beleza natural e cultural.</p>
+                <a href="#" class="action_btntitle">Comprar passagem</a>
+            </div>
+        </div>
+        <div id="santacatarina" class="background">
+            <div class="title">
+                <h1>Santa Catarina</h1>
+                <p>Santa Catarina é um estado localizado na região Sul do Brasil, conhecido por suas belas praias, cidades charmosas e paisagens naturais diversificadas. A capital, Florianópolis, é um dos destinos mais populares, com mais de 40 praias, cada uma com sua própria personalidade e atrativos. Entre as mais famosas estão a Praia da Joaquina, conhecida pelas ondas perfeitas para surfe, e a Praia dos Ingleses, que é bastante movimentada e atrativa para turistas.</p>
+                <a href="#" class="action_btntitle">Comprar passagem</a>
+            </div>
+        </div>
+        <div id="amazonas" class="background">
+            <div class="title">
+                <h1>Amazonas</h1>
+                <p>O Amazonas é um estado localizado na região Norte do Brasil, famoso por sua imensa floresta tropical, rios caudalosos e biodiversidade incomparável. A capital, Manaus, é a principal porta de entrada para explorar a Amazônia e oferece uma combinação fascinante de cultura, história e natureza.</p>
+                <a href="#" class="action_btntitle">Comprar passagem</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const IsOpen= dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = IsOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
