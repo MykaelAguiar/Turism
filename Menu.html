@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turistic</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="background.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -17,6 +18,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Contatos</a></li>
                 <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Ofertas</a></li>
             </ul>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -26,6 +28,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Contatos</a></li>
             <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Ofertas</a></li>
             <li><a href="Menu.html" class="action_btn">Iniciar</a></li>
         </div>
     </header>
@@ -65,7 +68,19 @@
                 <a href="#" class="action_btntitle">Comprar passagem</a>
             </div>
         </div>
-    </main>
+        <main>
+            <section id="principal">
+                <h1>outros</h1>
+                <p>Deseja ver mais? va em ofertas!</p>
+                <a href="Menu.html" class="action_btnprinc">Ofertas</a>
+            </section>
+        </main>
+
+        <div id="background">
+            <video loop autoplay muted>
+                <source src="Videos/outros.mp4" type="video/mp4">
+            </video>
+        </div>
 
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
